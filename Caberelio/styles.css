@@ -1,0 +1,459 @@
+/*
+  Identidade visual do Studio M Shine Hair.
+  Para personalizar rapidamente, altere as cores nesta lista.
+*/
+:root {
+  --plum: #38242f;
+  --plum-dark: #241720;
+  --rose: #ead8d4;
+  --gold: #c8a46b;
+  --cream: #faf7f2;
+  --white: #ffffff;
+  --text: #3f3639;
+  --muted: #766d70;
+  --border: #e9e1dc;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--plum);
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--gold);
+}
+
+.navbar {
+  min-height: 78px;
+  background: rgba(250, 247, 242, 0.98);
+  box-shadow: 0 3px 18px rgba(36, 23, 32, 0.07);
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--plum);
+}
+
+.navbar-brand:hover {
+  color: var(--plum);
+}
+
+.brand-mark {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.brand-name span {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: var(--plum) !important;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--gold) !important;
+}
+
+.btn {
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 1.35rem;
+}
+
+.btn-gold {
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--plum-dark);
+}
+
+.btn-gold:hover,
+.btn-gold:focus-visible {
+  border-color: #d9b77f;
+  background: #d9b77f;
+  color: var(--plum-dark);
+}
+
+.hero-image {
+  height: min(680px, 78vh);
+  min-height: 480px;
+  object-fit: cover;
+  object-position: center 42%;
+  filter: brightness(0.56);
+}
+
+.carousel-caption {
+  right: auto;
+  bottom: 17%;
+  left: max(9%, calc((100% - 1140px) / 2));
+  max-width: 630px;
+  padding: 1rem;
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.carousel-caption p {
+  color: var(--white);
+}
+
+.eyebrow {
+  color: var(--rose);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-copy {
+  max-width: 440px;
+  margin-bottom: 1.6rem;
+  font-size: 1.05rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.about-section {
+  background: var(--white);
+}
+
+.about-image,
+.care-image {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+
+.about-image {
+  object-position: center;
+}
+
+.text-gold {
+  color: #9a7540;
+}
+
+.section-title {
+  margin-bottom: 1.25rem;
+  color: var(--plum);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.about-section p:not(.eyebrow),
+.care-section p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  border-bottom: 1px solid var(--gold);
+  color: var(--plum);
+  font-weight: 700;
+}
+
+.text-link span {
+  margin-left: 0.35rem;
+  color: var(--gold);
+}
+
+.services-section {
+  background: var(--cream);
+}
+
+.section-heading {
+  max-width: 680px;
+  margin: 0 auto 3rem;
+}
+
+.section-heading > p:last-child {
+  color: var(--muted);
+}
+
+.service-card {
+  overflow: hidden;
+  border: 0;
+  border-radius: 2px;
+  background: var(--white);
+  box-shadow: 0 8px 28px rgba(56, 36, 47, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(56, 36, 47, 0.12);
+}
+
+.service-card .card-img-top {
+  height: 230px;
+  object-fit: cover;
+}
+
+.service-card .card-body {
+  padding: 1.5rem;
+}
+
+.service-number {
+  margin-bottom: 0.5rem;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+}
+
+.service-card .card-title {
+  color: var(--plum);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.service-card .card-text {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.care-section {
+  background: var(--rose);
+}
+
+.care-image {
+  height: 400px;
+}
+
+.btn-dark-plum {
+  border: 1px solid var(--plum);
+  background: var(--plum);
+  color: var(--white);
+}
+
+.btn-dark-plum:hover,
+.btn-dark-plum:focus-visible {
+  border-color: var(--plum-dark);
+  background: var(--plum-dark);
+  color: var(--white);
+}
+
+.team-section {
+  background: var(--white);
+}
+
+.team-card {
+  padding: 0.5rem 1rem;
+}
+
+.team-card img {
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 1.25rem;
+  border: 5px solid var(--cream);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-card h3,
+.contributor-card h3 {
+  color: var(--plum);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.team-card p {
+  color: var(--muted);
+}
+
+.faq-section {
+  background: var(--cream);
+}
+
+.narrow-container {
+  max-width: 850px;
+}
+
+.accordion-item {
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 2px !important;
+  background: var(--white);
+}
+
+.accordion-button {
+  color: var(--plum);
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--rose);
+  box-shadow: none;
+  color: var(--plum);
+}
+
+.accordion-button:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.2rem rgba(200, 164, 107, 0.2);
+}
+
+.accordion-body {
+  color: var(--muted);
+}
+
+.contributors-section {
+  background: var(--white);
+}
+
+.contributor-card {
+  height: 100%;
+  padding: 1.5rem;
+  border-left: 3px solid var(--gold);
+  background: var(--cream);
+}
+
+.contributor-card h3 {
+  font-size: 1.15rem;
+}
+
+.contributor-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.contact-section {
+  background: var(--plum);
+  color: var(--white);
+}
+
+.contact-section .section-title,
+.contact-section .eyebrow {
+  color: var(--white);
+}
+
+.contact-section > .container > p:not(.eyebrow, .contact-note) {
+  color: #e5dce1;
+}
+
+.contact-note {
+  margin: 1.5rem 0 0;
+  color: #d3c5cd;
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  background: var(--plum-dark);
+  color: #e9dfe4;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #e9dfe4;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--gold);
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    min-height: 68px;
+  }
+
+  .navbar-nav {
+    padding: 0.75rem 0;
+  }
+
+  .hero-image {
+    height: 590px;
+    min-height: 0;
+  }
+
+  .carousel-caption {
+    right: 8%;
+    bottom: 14%;
+    left: 8%;
+  }
+
+  .carousel-caption h1,
+  .carousel-caption h2 {
+    font-size: clamp(2.5rem, 11vw, 3.6rem);
+  }
+
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .about-image,
+  .care-image {
+    height: 320px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
